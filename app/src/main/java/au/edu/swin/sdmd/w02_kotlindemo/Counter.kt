@@ -7,12 +7,12 @@ fun main(args: Array<String>) {
     val counters = listOf(c, c1, c)
     printCounters(counters)
 
-    for (x in 1..4) {
+    for (x in 1..1000) {
         counters[1].increment()
     }
     printCounters(counters)
 
-    for (x in 1 until 7) {
+    for (x in 1 until 100000) {
         counters[0].increment()
     }
     printCounters(counters)
